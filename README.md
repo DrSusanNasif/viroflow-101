@@ -2,6 +2,17 @@
 
 A beginner-friendly bioinformatics project for exploring a viral genome using Python and Nextflow.
 
+## Current status
+
+This repository currently contains:
+
+- a test viral FASTA file
+- a beginner Python script to summarize the FASTA sequence
+- a simple Nextflow workflow
+- a basic project configuration file
+
+Next step: test the workflow locally or in a cloud/web environment.
+
 ## Project goal
 
 This project teaches beginners how to analyze a simple viral FASTA file and generate a basic genome summary.
