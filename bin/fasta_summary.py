@@ -1,7 +1,9 @@
 # fasta_summary.py
 # A beginner-friendly script to summarize a viral FASTA file
 
-fasta_file = "data/test_virus.fasta"
+import sys
+
+fasta_file = sys.argv[1]
 
 sequence_name = ""
 sequence = ""

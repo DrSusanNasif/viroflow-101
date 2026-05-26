@@ -7,6 +7,8 @@ A beginner-friendly Nextflow workflow for summarizing a viral FASTA file.
 
 process SUMMARIZE_FASTA {
 
+    publishDir "results", mode: "copy"
+    
     input:
     path fasta_file
 
@@ -15,7 +17,7 @@ process SUMMARIZE_FASTA {
 
     script:
     """
-    python3 bin/fasta_summary.py > genome_summary.txt
+    python3 ${projectDir}/bin/fasta_summary.py ${fasta_file} > genome_summary.txt
     """
 }
 
