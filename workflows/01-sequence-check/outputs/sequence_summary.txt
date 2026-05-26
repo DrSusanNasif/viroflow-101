@@ -1,0 +1,7 @@
+ViroFlow-101: Sequence Check
+Input file: data/raw/example_sequence.fasta
+Status: FASTA file found
+Number of sequences: 1
+Sequence checks:
+- SAMPLE_001: 39 bases
+  Status: sequence letters look OK
