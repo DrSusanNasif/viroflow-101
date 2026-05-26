@@ -8,23 +8,31 @@ print(f"Input file: {fasta_file}")
 if fasta_file.exists():
     print("Status: FASTA file found")
 
-    sequence_count = 0
-    sequence_names = []
+    sequences = {}
+    current_name = None
+    current_sequence = ""
 
     with open(fasta_file, "r") as file:
         for line in file:
             line = line.strip()
 
             if line.startswith(">"):
-                sequence_count = sequence_count + 1
-                sequence_name = line.replace(">", "")
-                sequence_names.append(sequence_name)
+                if current_name is not None:
+                    sequences[current_name] = current_sequence
 
-    print(f"Number of sequences: {sequence_count}")
-    print("Sequence names:")
+                current_name = line.replace(">", "")
+                current_sequence = ""
+            else:
+                current_sequence = current_sequence + line
 
-    for name in sequence_names:
-        print(f"- {name}")
+        if current_name is not None:
+            sequences[current_name] = current_sequence
+
+    print(f"Number of sequences: {len(sequences)}")
+    print("Sequence lengths:")
+
+    for name, sequence in sequences.items():
+        print(f"- {name}: {len(sequence)} bases")
 
 else:
     print("Status: FASTA file NOT found")
