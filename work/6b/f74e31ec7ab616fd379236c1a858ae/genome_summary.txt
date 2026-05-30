@@ -1,9 +1,0 @@
-Genome summary
---------------
-Sequence name: mini_virus
-Genome length: 21 nucleotides
-A count: 5
-T count: 5
-G count: 6
-C count: 5
-GC content: 52.38%
