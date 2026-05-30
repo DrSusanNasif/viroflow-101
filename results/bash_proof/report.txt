@@ -1,0 +1,9 @@
+Original file content:
+>mini_virus
+ATGCGCGTTAACCGGTTAAGC
+
+File statistics:
+ 2  2 34 data/test_virus.fasta
+
+Sequence only:
+NATGCGCGTTAACCGGTTAAGC

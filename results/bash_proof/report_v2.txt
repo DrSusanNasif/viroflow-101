@@ -1,0 +1,17 @@
+Bash FASTA proof v2
+-------------------
+Input file: data/test_virus.fasta
+
+Clean sequence:
+ATGCGCGTTAACCGGTTAAGC
+
+Sequence length: 21
+
+Base counts:
+A: 5
+T: 5
+G: 6
+C: 5
+N: 0
+
+GC content: 52.38%
